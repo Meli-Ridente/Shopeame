@@ -1,0 +1,60 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3{
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.s{
+  font-size: 32px;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Red Hat Display';
+  font-style: normal; 
+  background-color:#3e586d;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-right: 10px;
+}
+
+.container-line{
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  justify-content: center;
+  background-color: #FFC970;
+  color: #444444
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.prods{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gestion{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vector{
+  width: 20px;
+  height: 19.22px;
+}
+
+p{
+  margin: 10px 20px;
+}
