@@ -1,3 +1,7 @@
+*{
+  color: #444444
+}
+
 .container{
   display: flex;
   justify-content: center;
@@ -25,21 +29,20 @@ h3{
 }
 
 .container-line{
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  display: flex;
+  padding: 8px;
   justify-content: center;
   background-color: #FFC970;
-  color: #444444
 }
 
 .home{
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .prods{
-  display: flex;
+  display: flex;    
   flex-direction: column;
   align-items: center;
 }
@@ -47,7 +50,7 @@ h3{
 .gestion{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .vector{
@@ -55,6 +58,12 @@ h3{
   height: 19.22px;
 }
 
-p{
+a{
+  text-decoration:none;
   margin: 10px 20px;
+}
+
+.home:hover, .prods:hover, .gestion:hover{
+  background-color: rgba(194, 194, 194, 0.884);
+  border-radius: 20px;
 }
