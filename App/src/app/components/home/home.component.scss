@@ -3,6 +3,8 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
 }
 
 span{
@@ -11,4 +13,9 @@ span{
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
+}
+
+p{
+  font-family: 'Inter';
+  font-style: normal;
 }
