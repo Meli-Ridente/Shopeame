@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+
+import { ProductService } from 'src/app/service.service';
+
+import { serviceInterface } from 'src/app/modules/servicio.interface';
 
 @Component({
   selector: 'app-productos',
@@ -6,5 +10,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./productos.component.scss']
 })
 export class ProductosComponent {
+  productos: serviceInterface[]
+  constructor(service: ProductService){
+    this.productos = service.productos;
+  }
 
+  ngOnInit(){
+
+  }
 }

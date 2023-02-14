@@ -1,6 +1,14 @@
-.container{
+.container1{
+  display: grid;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.principal{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .icons{
@@ -34,4 +42,20 @@ input{
   margin: 10px 0px;
   width: 300px;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.producto{
+  margin: 10px 30px;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.img-prod{
+  width: 180px;
+  height: 180px;
 }
