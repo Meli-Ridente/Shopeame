@@ -2,9 +2,11 @@ import { Injectable } from '@angular/core';
 import { serviceInterface } from './modules/servicio.interface';
 import { HttpClient } from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root'
-})
+// @Injectable({
+//   providedIn: 'root'
+// })
+
+@Injectable()
 
 export class ProductService {
   
