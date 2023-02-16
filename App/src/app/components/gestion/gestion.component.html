@@ -1,1 +1,20 @@
-<p>gestion works!</p>
+<div class="first">
+    <div class="container">
+        <h2>Creación/edición de productos</h2>
+<form novalidate [formGroup]="productsForm"(ngSubmit)="onSubmit()">
+    <fieldset>
+        <label>Nombre</label>
+    <input type="text" id="name" formControlName="name" placeholder="name"/>
+    <div></div> *ngIf=""
+</fieldset>
+    <input formControlName="price" placeholder="price"/>
+    <input formControlName="description" placeholder="description"/>
+    <input formControlName="image" placeholder="image"/>
+    <input formControlName="opinions" placeholder="opinions"/>
+
+    <button type="submit">Guardar</button>
+</form>
+    </div>
+    </div>
+<div>
+      <p>{{productos}}</p>

@@ -15,6 +15,10 @@ import { ProductoComponent } from './components/producto/producto.component';
 
 
 import { ProductService } from './service.service';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'; 
+import {HttpClientModule} from "@angular/common/http"
+// no se si es necesario importar FormsMdule, ya que he importado ReactiveFormsModule. Preguntar..
+
 
 
 @NgModule({
@@ -31,7 +35,9 @@ import { ProductService } from './service.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule, // Importo este módulo para poder crear formularios
+    HttpClientModule // importo este múdulo para utilizarlo en sevicios
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
