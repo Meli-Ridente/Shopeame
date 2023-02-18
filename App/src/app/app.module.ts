@@ -2,7 +2,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-
+import {HttpClientModule} from '@angular/common/http';
+import { AppPipesModule } from './app-pipes/app-pipes.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ComponentsComponent } from './components/components.component';
@@ -30,8 +32,11 @@ import { ProductService } from './service.service';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    AppPipesModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
