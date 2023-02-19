@@ -1,9 +1,7 @@
 import { Component,OnInit} from '@angular/core';
 
 
-import { serviceInterface } from 'src/app/modules/servicio.interface';
 
-import { FilterPipe } from 'src/app/app-pipes/filter.pipe';
 
 @Component({
   selector: 'app-productos',
@@ -13,8 +11,8 @@ import { FilterPipe } from 'src/app/app-pipes/filter.pipe';
 
 
 export class ProductosComponent implements OnInit{
-  // valorParent: serviceInterface[]
-  
+
+
   valorFiltrado: string;
   constructor(){
     this.valorFiltrado='';

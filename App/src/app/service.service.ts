@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { serviceInterface } from './modules/servicio.interface';
+import { serviceInterface } from './models/servicio.interface';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 // @Injectable({
 //   providedIn: 'root'
@@ -10,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class ProductService {
   
-  productos: string = 'https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products';
+  url: string = 'https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products';
   constructor(private http: HttpClient) {}
 
    getProduct(): Observable<serviceInterface[]>{

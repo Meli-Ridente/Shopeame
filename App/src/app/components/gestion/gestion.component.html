@@ -24,8 +24,17 @@
     <input formControlName="opinions" placeholder="opinions"/>
 </div> 
     <button type="submit">Guardar</button>
+    <h1>PINTA{{nuevoProducto2}}no</h1>
+    <div *ngFor="let producto of (listadoProductos)">
+
+        <h2>{{producto.name}}</h2>
+        <p>{{producto.description}}</p>
+        <h2>{{producto.price}}</h2>
+    </div>
+    <h2>pinta</h2>
+
 </form>
     </div>
     </div>
-<div>
-<p>{{nuevoProducto}}</p>
+
+    

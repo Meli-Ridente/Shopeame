@@ -5,5 +5,5 @@ export interface serviceInterface {
     description: string,
     stars: number,
     image: string,
-    opinions: string // añado este campo para poder usar la interfaz desde el componente gestión.
+    // opinions: string // añado este campo para poder usar la interfaz desde el componente gestión.
 }
