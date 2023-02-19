@@ -1,11 +1,9 @@
+import { Component,OnInit} from '@angular/core';
 
-import { Component, OnInit} from '@angular/core';
 
-import { ProductService } from 'src/app/service.service';
+import { serviceInterface } from 'src/app/modules/servicio.interface';
 
-import { serviceInterface } from 'src/app/models/servicio.interface';
-
-// import { FilterPipe } from 'src/app/app-pipes/filter.pipe';
+import { FilterPipe } from 'src/app/app-pipes/filter.pipe';
 
 @Component({
   selector: 'app-productos',
@@ -15,17 +13,15 @@ import { serviceInterface } from 'src/app/models/servicio.interface';
 
 
 export class ProductosComponent implements OnInit{
-  product: any[] = [];
+  // valorParent: serviceInterface[]
+  
   valorFiltrado: string;
-  constructor(private service: ProductService){
+  constructor(){
     this.valorFiltrado='';
+  }
+
+  ngOnInit(): void{
 
   }
-  ngOnInit(){
-    this.service.getProduct().subscribe((response: any) => {
-      response.forEach((productos: serviceInterface)=> {
-        this.product.push(productos)
-      })
-    })
-  }
+  
 }

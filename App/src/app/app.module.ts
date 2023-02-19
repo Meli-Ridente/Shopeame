@@ -2,7 +2,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-
+import {HttpClientModule} from '@angular/common/http';
+import { AppPipesModule } from './app-pipes/app-pipes.module';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ComponentsComponent } from './components/components.component';
@@ -34,10 +36,9 @@ import {HttpClientModule} from "@angular/common/http"
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    RouterModule,
-    ReactiveFormsModule, // Importo este módulo para poder crear formularios
-    HttpClientModule // importo este múdulo para utilizarlo en sevicios
+    RouterModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

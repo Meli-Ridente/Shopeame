@@ -1,14 +1,14 @@
 <div class="first">
   <div class="container1">
     <div class="principal">
-      <h2>Listado de productos ({{product.length}})</h2>
+      <h2>Listado de productos ({{products.length}})</h2>
       <div class="icons">
         <img src="/assets/pp.png" class="assets">
         <img src="/assets/segundo.png" class="assets">
         <input type="text" placeholder="Buscador">
       </div>
       <div class="container">
-        <div *ngFor="let producto of product" class="producto">
+        <div *ngFor="let producto of products" class="producto">
           <img src="{{producto.image}}" class="img-prod">
           <h5>{{producto.name}}</h5>
           <p>{{producto.description}}</p>
