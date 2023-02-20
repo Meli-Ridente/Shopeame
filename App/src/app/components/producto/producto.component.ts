@@ -1,7 +1,6 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 import { ProductService } from 'src/app/service.service';
-
 import { serviceInterface } from 'src/app/models/servicio.interface';
 
 @Component({
@@ -10,7 +9,8 @@ import { serviceInterface } from 'src/app/models/servicio.interface';
   styleUrls: ['./producto.component.scss']
 })
 export class ProductoComponent implements OnInit{
-  products: serviceInterface[] = [];
+
+ @Input() products: serviceInterface[] = [];
   valorFiltrado: string = '';
   
   constructor(private service: ProductService){

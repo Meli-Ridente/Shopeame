@@ -1,1 +1,36 @@
-<p>gestion works!</p>
+<div class="first">
+    <div class="container">
+        <h2>Creación/edición de productos</h2>
+<form [formGroup]="productsForm"(ngSubmit)="onSubmit()">
+    <div>
+    <label>Nombre del producto:</label><br>
+    <input type="text" id="name" formControlName="name" placeholder="Pon el nombre"/>
+</div>
+
+<div>
+    <label>Precio:</label><br>
+    <input formControlName="price" placeholder="price"/>
+</div>
+<div>
+    <label>Descripción:</label><br>
+    <input formControlName="description" placeholder="description"/>
+</div>
+<div>
+    <label>Ruta de la imagen:</label><br>
+    <input formControlName="image" placeholder="image"/>
+</div>
+<div>
+    <label>Opiniones:</label><br>
+    <input formControlName="opinions" placeholder="opinions"/>
+</div> 
+    <button type="submit">Guardar</button>
+</form>
+    </div>
+    </div>
+
+    <h2>{{nuevoProducto.name}}</h2>
+    <h2>{{nuevoProducto.price}}</h2>
+    <h2>{{nuevoProducto.description}}</h2>
+    <img src="{{nuevoProducto.image}}">
+    <h2>{{nuevoProducto.opinions}}</h2>
+    
