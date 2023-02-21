@@ -2,65 +2,72 @@
   background-color: white;
   padding: 20px;
   border-radius: 15px;
-}
+  margin: 10px auto;
+  .principal{
+    display: flex;
+    justify-content: space-between;
+    .search{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icons{
+        background-color: rgb(233 233 233);
+        display: flex;
+        width: 70px;
+        justify-content: center;
+        align-items: initial;
+        border-radius: 4px;
+        .assets{
+          margin: 10px 5px;
+          width: 20px;
+        }
+      }
+      input{
+        margin-top: 10px;
+        width: 180px;
+        height: 30px;
+        border-radius: 8px;
+      }
+    }
+  }
 
-.principal{
-  display: flex;
-  justify-content: space-between;
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .producto{
+      margin: 50px 30px;
+      .img-prod{
+        width: 180px;
+        height: 180px;
+      }
+      .down{
+        display: flex;
+        align-items: baseline;
+        .star{
+          height: 15px;
+          width: 15px;
+          margin: 0px 2px;
+        }
+        .letter-star{
+          margin:0px 10px;
+        }
+        button{
+          margin: 0px 20px;
+          color: blue;
+          border: 1px solid blue;
+          border-radius: 5px;
+          height: 25px;
+          width: 100px;
+        }
+      }
+    }
+  }
 }
+// .prods{
+//   display: grid;
+//   grid-template-columns: repeat(4, 4fr);
+// }
 
-.search{
-  display: flex;
-  justify-content: flex-end;
-}
-
-input{
-  margin-top: 10px;
-  width: 180px;
-  height: 30px;
-  border-radius: 5px;
-}
-
-.icons{
-  background-color: rgb(233 233 233);
-  display: flex;
-  padding: 5px;
-  border-radius: 4px;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-  width: 136px;
-  height: 36px;
-}
-
-.assets{
-  margin: 10px 0px;
-  width: 20px;
-}
 
 
-.prods{
-  display: grid;
-  grid-template-columns: repeat(4, 4fr);
-}
-
-.imgProds{
-  margin: 10px 0px;
-  width: 300px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.producto{
-  margin: 10px 30px;
-}
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 30px;
-}
-
-.img-prod{
-  width: 180px;
-  height: 180px;
-}

@@ -6,68 +6,65 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-h3{
-  font-weight: 100;
-  font-size: 25px;
-}
-
-.s{
-  font-size: 32px;
-  border-radius: 8px;
-  color: white;
-  font-family: 'Red Hat Display';
-  font-style: normal; 
-  background-color:#3e586d;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin-right: 10px;
+  .s{
+    font-size: 32px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Red Hat Display';
+    font-style: normal; 
+    background-color:#3e586d;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 10px;
+  }
+  h3{
+    font-weight: 100;
+    font-size: 25px;
+  }
 }
 
 .container-line{
   display: flex;
-  
   padding: 8px;
   justify-content: center;
   background-color: #FFC970;
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  .vector{
+    width: 20px;
+    height: 19.22px;
+  }
+  .prods{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .gestion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  a{
+    text-decoration:none;
+    margin: 10px 20px;
+  }
+  .home:hover, .prods:hover, .gestion:hover{
+    background-color: rgba(194, 194, 194, 0.884);
+    border-radius: 20px;
+  }
 }
 
-.home{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 20px;
-}
 
-.prods{
-  display: flex;    
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 10px;
-}
 
-.gestion{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 20px;
-}
 
-.vector{
-  width: 20px;
-  height: 19.22px;
-}
 
-a{
-  text-decoration:none;
-  margin: 10px 20px;
-}
 
-.home:hover, .prods:hover, .gestion:hover{
-  background-color: rgba(194, 194, 194, 0.884);
-  border-radius: 20px;
-}

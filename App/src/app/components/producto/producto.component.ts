@@ -1,5 +1,4 @@
 import { Component, OnInit, Input} from '@angular/core';
-
 import { ProductService } from 'src/app/service.service';
 import { serviceInterface } from 'src/app/models/servicio.interface';
 
@@ -15,7 +14,11 @@ export class ProductoComponent implements OnInit{
   
   constructor(private service: ProductService){
       // this.valorParent = []
-    }
+  }
+
+  OnClick(): void {
+    alert('si')
+  }
 
   ngOnInit(): void {
     this.service.getProduct().subscribe((response: serviceInterface[]) => {
